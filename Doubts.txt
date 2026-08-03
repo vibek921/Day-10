@@ -1,0 +1,69 @@
+class cat:
+    def speak(self):
+        print("meow")
+
+class dog:
+    def speak(self):
+        print("woof")
+
+
+animal = [cat(), dog()]
+
+for pets in animal:
+    print(pets.speak())
+
+The output is:
+meow
+None
+woof
+None
+
+but I confused that in general i thought, there is total 2 object in the list (animal), so it will print first cat object then dog object but its also return none value after my print line, so I tried this:
+
+class Cat:
+    def speak(self):
+        print("Meow")
+
+c = Cat()
+c.speak()
+
+but its only give me 'Meow', no None value. 
+
+def speak():
+    print("meow")
+
+speak()
+
+its also give me only 'meow'
+
+then I do some researche and know that my problem comes from this line: print(pets.speak()), we already know that if we use print in function, during function run the print auto works, we just need to run the funtion(speak()), coz I add a print, so the funtion auto print the "meow", then print search for a value to print so python give a return value none, so I get None after the function call. Here is the updated code at line no.: 1-17. and i also found a another way to not get the None value with using Print.
+
+when I using this:
+class cat:
+    def speak(self):
+        print("meow")
+        return ""
+
+class dog:
+    def speak(self):
+        print("woof")
+        return ""
+
+d = dog()
+c = cat()
+# d.speak()
+
+animal = [c, d]
+for pets in animal:
+    print(pets.speak())
+
+
+I get this:
+meow
+
+woof
+
+then i wonder why its give me blank space so i find that funtion (speak()) works, then print works, but now print get nothing so its leave a blank space. so I update this version at line no.: 34-51.
+
+
+now I have some doubt on local variable and global variable, I will solve it tomorrow and update this file.
