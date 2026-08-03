@@ -41,6 +41,7 @@ Each class should have an `area()` method that calculates and returns its own ar
 
 Create one object of each class, store them in a list, and use a single loop to print the area of every shape.
 
+
 **Rules:**
 - Same method name in every class.
 - Use polymorphism.
