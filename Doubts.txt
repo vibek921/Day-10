@@ -67,3 +67,4 @@ then i wonder why its give me blank space so i find that funtion (speak()) works
 
 
 now I have some doubt on local variable and global variable, I will solve it tomorrow and update this file.
+good night.
