@@ -68,3 +68,7 @@ then i wonder why its give me blank space so i find that funtion (speak()) works
 
 now I have some doubt on local variable and global variable, I will solve it tomorrow and update this file.
 good night.
+
+
+my doubt was why I cant take a velue when I call the funtion, why always __init__ is required.
+so I use this method (line no.: 8-13 in doubt_set.py). and I also make a version of last day question no 2 (line no.: 8-25 in doubt_set.py). 
